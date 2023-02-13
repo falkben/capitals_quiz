@@ -70,7 +70,7 @@
         }
 
         function submit(event) {
-          let userAnswer = document.getElementById("answer").value;
+          let userAnswer = document.getElementById("answer").value.trim();
           if (userAnswer.toLowerCase() == answer.toLowerCase()) {
             numberCorrect += 1;
             document.getElementById("feedback").innerHTML =
